@@ -2,4 +2,11 @@
     <string name="app_name">LaMetricAppTest</string>
     <string name="sing_in_header">Sing In</string>
     <string name="sing_in_button_text">CONTINUE WITH LAMETRIC</string>
+    <string name="login_sing_in_header">Sign In With Your LaMetric Account</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_checkbox_hint">Remember me</string>
+    <string name="login_forgot_pass">Forgot your password? Restore access</string>
+    <string name="login_new_account">Don\'t have account? Know how to get started</string>
+    <string name="login_sing_in_button">sign in</string>
 </resources>

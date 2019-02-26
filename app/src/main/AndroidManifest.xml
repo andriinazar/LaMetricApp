@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".SignInActivity"
+        <activity
+            android:name=".SignInActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SingInTheme">
             <intent-filter>
@@ -20,6 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme"/>
     </application>
 
 </manifest>

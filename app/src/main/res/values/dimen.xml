@@ -7,4 +7,16 @@
     <dimen name="sing_in_button_text_padding">34dp</dimen>
     <dimen name="view_corner_radius">4dp</dimen>
     <dimen name="view_border_size">1dp</dimen>
+
+
+    <!-- Login screen -->
+    <dimen name="login_sing_in_header_text">24sp</dimen>
+    <dimen name="login_sing_in_header_text_padding">32dp</dimen>
+    <dimen name="login_edit_text_l_r_padding">8dp</dimen>
+    <dimen name="login_edit_start_padding">16dp</dimen>
+    <dimen name="login_edit_start_padding_16">16dp</dimen>
+    <dimen name="login_check_box_padding">16dp</dimen>
+    <dimen name="login_text_size">20sp</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+
 </resources>
