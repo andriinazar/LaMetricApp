@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sing_in_header_size">44sp</dimen>
+    <dimen name="sing_in_container_padding">16dp</dimen>
+    <dimen name="sing_in_container_h">200dp</dimen>
+    <dimen name="sing_in_header_padding">24dp</dimen>
+    <dimen name="sing_in_button_text_padding">34dp</dimen>
+    <dimen name="view_corner_radius">4dp</dimen>
+    <dimen name="view_border_size">1dp</dimen>
+</resources>

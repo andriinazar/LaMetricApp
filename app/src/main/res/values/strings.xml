@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LaMetricAppTest</string>
+    <string name="sing_in_header">Sing In</string>
+    <string name="sing_in_button_text">CONTINUE WITH LAMETRIC</string>
+</resources>
