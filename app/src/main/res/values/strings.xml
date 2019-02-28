@@ -19,5 +19,7 @@
     <string name="b_allow_text">ALLOW</string>
     <string name="b_deny">DENY</string>
 
+    <string name="icon_activity_title">Icons</string>
+
 
 </resources>

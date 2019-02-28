@@ -27,4 +27,11 @@
     <dimen name="account_text_padding">8dp</dimen>
     <dimen name="account_button_padding">24dp</dimen>
 
+    <!-- Icons App -->
+    <dimen name="preloader_padding">6dp</dimen>
+    <dimen name="text_start_padding">48dp</dimen>
+    <dimen name="icon_list_padding">12dp</dimen>
+    <dimen name="icon_text_padding_top">8dp</dimen>
+    <dimen name="icon_text_padding_bottom">12dp</dimen>
+
 </resources>

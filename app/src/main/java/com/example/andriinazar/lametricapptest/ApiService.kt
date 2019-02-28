@@ -1,12 +1,17 @@
 package com.example.andriinazar.lametricapptest
 
-import okhttp3.ResponseBody
 import retrofit2.Response
+import io.reactivex.Observable
 import retrofit2.http.GET
-import java.util.*
+import retrofit2.http.POST
+import retrofit2.http.Query
 
 interface ApiService {
 
-    @GET ("api/v2/oauth2/authorize/")
-    fun authorizeUser() : Observable<Response<Unit>>
+    @GET("/api/v2/icons")
+    fun getIcons(
+            @Query("page") page: Int,
+            @Query("page_size") page_size: Int,
+            @Query("order") newest: String) : Observable<Response<IconModel>>
+
 }

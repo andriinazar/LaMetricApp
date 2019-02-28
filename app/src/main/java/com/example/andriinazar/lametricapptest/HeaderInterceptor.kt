@@ -9,7 +9,7 @@ class HeaderInterceptor : Interceptor {
         proceed(
                 request()
                         .newBuilder()
-                        .addHeader("client_id", BuildConfig.CLIENT_ID)
+                        //.addHeader("client_id", BuildConfig.CLIENT_ID)
                         .addHeader("redirect_uri", "https://www.google.com")
                         .addHeader("response_type", "code")
                         .addHeader("Content-Type", "application/json")
