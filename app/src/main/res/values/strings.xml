@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">LaMetricAppTest</string>
     <string name="sing_in_header">Sing In</string>
+
     <string name="sing_in_button_text">CONTINUE WITH LAMETRIC</string>
     <string name="login_sing_in_header">Sign In With Your LaMetric Account</string>
     <string name="login_email_hint">Email</string>
@@ -9,4 +10,14 @@
     <string name="login_forgot_pass">Forgot your password? Restore access</string>
     <string name="login_new_account">Don\'t have account? Know how to get started</string>
     <string name="login_sing_in_button">sign in</string>
+
+    <string name="assistant_header">Authorize GOOGLE ASSISTANT to access your LaMetric account?</string>
+    <string name="assistant_list_header">GOOGLE ASSISTANT will be able to:</string>
+    <string name="assistant_text_1">* Control your devices remotely.</string>
+    <string name="assistant_text_2">* Send notification to your devices remotely.</string>
+    <string name="assistant_text_3">* Send notification to your devices and send notification inside your network.</string>
+    <string name="b_allow_text">ALLOW</string>
+    <string name="b_deny">DENY</string>
+
+
 </resources>
