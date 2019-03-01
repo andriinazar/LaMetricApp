@@ -20,6 +20,9 @@
     <string name="b_deny">DENY</string>
 
     <string name="icon_activity_title">Icons</string>
+    <string name="loading_header">Content is loading. Please wait &#8230;</string>
+    <string name="error_header">Error occurred</string>
+    <string name="retry_button_header">Retry</string>
 
 
 </resources>

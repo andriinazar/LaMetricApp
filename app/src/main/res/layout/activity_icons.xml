@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".IconsActivity">
+    tools:context=".activity.IconsActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/tb_icons"
@@ -28,12 +28,58 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end" />
     </android.support.v7.widget.Toolbar>
+    <TextView
+        android:id="@+id/tv_loading_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/loading_text_size"
+        android:text="@string/loading_header"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/ll_retry_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/loading_text_size"
+            android:text="@string/error_header"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/darker_gray"
+            android:layout_margin="@dimen/error_padding" />
+
+        <Button
+            android:id="@+id/b_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/error_padding"
+            android:paddingStart="@dimen/sing_in_button_text_padding"
+            android:paddingEnd="@dimen/sing_in_button_text_padding"
+            android:text="@string/retry_button_header"
+            android:textColor="@color/sing_in_text_color"
+            android:textSize="@dimen/button_text_size"
+            android:background="@drawable/rounded_button"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_icon_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="@dimen/icon_list_padding"
+        android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

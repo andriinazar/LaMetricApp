@@ -1,4 +1,4 @@
-package com.example.andriinazar.lametricapptest
+package com.example.andriinazar.lametricapptest.decorators
 
 import android.graphics.Rect
 import android.support.v7.widget.RecyclerView

@@ -18,12 +18,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "CLIENT_ID", "\"d7d5c96-b996-7ee1-d2fb-587904905cd1\""
+            buildConfigField "String", "CLIENT_ID", "\"5d7d5c96-b996-7ee1-d2fb-587904905cd1\""
             buildConfigField "String", "CLIENT_SECRET", "\"JDEkbDBoZlRpcWUkTUlOTUZhOGVRMW9zSnY0dWs0ZFBZLg==\""
             buildConfigField "String", "BASE_URL", "\"https://developer.lametric.com\""
         }
         debug {
-            buildConfigField "String", "CLIENT_ID", "\"d7d5c96-b996-7ee1-d2fb-587904905cd1\""
+            buildConfigField "String", "CLIENT_ID", "\"5d7d5c96-b996-7ee1-d2fb-587904905cd1\""
             buildConfigField "String", "CLIENT_SECRET", "\"JDEkbDBoZlRpcWUkTUlOTUZhOGVRMW9zSnY0dWs0ZFBZLg==\""
             buildConfigField "String", "BASE_URL", "\"https://developer.lametric.com\""
         }

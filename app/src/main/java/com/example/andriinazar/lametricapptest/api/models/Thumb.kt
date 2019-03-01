@@ -1,4 +1,4 @@
-package com.example.andriinazar.lametricapptest
+package com.example.andriinazar.lametricapptest.api.models
 
 data class Thumb(
         val large: String,

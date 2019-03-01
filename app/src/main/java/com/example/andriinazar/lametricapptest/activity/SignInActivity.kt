@@ -1,8 +1,9 @@
-package com.example.andriinazar.lametricapptest
+package com.example.andriinazar.lametricapptest.activity
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.example.andriinazar.lametricapptest.R
 import kotlinx.android.synthetic.main.activity_sign_in.*
 
 class SignInActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.example.andriinazar.lametricapptest
+package com.example.andriinazar.lametricapptest.adapters
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
@@ -7,6 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.andriinazar.lametricapptest.api.models.IconInfo
+import com.example.andriinazar.lametricapptest.R
+import com.example.andriinazar.lametricapptest.api.ApiManager
+import com.squareup.picasso.NetworkPolicy
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.i_icon_list.view.*
 
@@ -24,7 +28,7 @@ class IconsAdapter (private val icons: ArrayList<IconInfo>, context: Context) : 
     }
 
     override fun onBindViewHolder(holeder: ViewHolder, position: Int) {
-        holeder.bindItems(icons[position])
+        holeder.bindItems(icons[position], context)
     }
 
     fun updateData(newIcons: ArrayList<IconInfo>) {
@@ -36,8 +40,13 @@ class IconsAdapter (private val icons: ArrayList<IconInfo>, context: Context) : 
         private val iconImage = view.iv_icon_image as ImageView
         private val iconName = view.tv_icon_name as TextView
 
-        fun bindItems(iconInfo: IconInfo) {
-            Picasso.get().load(iconInfo.thumb.xlarge).placeholder(android.R.mipmap.sym_def_app_icon).into(iconImage)
+        fun bindItems(iconInfo: IconInfo, context: Context) {
+            if (ApiManager.hasNetwork(context)) {
+                Picasso.get().load(iconInfo.thumb.xlarge).placeholder(android.R.mipmap.sym_def_app_icon).into(iconImage)
+            } else {
+                Picasso.get().load(iconInfo.thumb.xlarge).networkPolicy(NetworkPolicy.OFFLINE).into(iconImage)
+            }
+
             iconName.text = iconInfo.title
         }
     }
